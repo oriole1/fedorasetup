@@ -1,0 +1,27 @@
+[DEFAULT]
+# Ignore IP addresses that should not be banned
+ignoreip = 127.0.0.1/8 ::1 192.168.1.100
+
+# Ban time in seconds
+bantime = 600
+
+# Time window for failed login attempts
+findtime = 600
+
+# Number of failed attempts before banning
+maxretry = 3
+
+[sshd]
+# Enable the SSH jail
+enabled = true
+
+# Port for SSH (default is 22)
+port = ssh
+
+# Filter for SSH
+filter = sshd
+
+# Log file for SSH
+logpath = /var/log/auth.log
+
+# Use the default settings for bantime, findtime, and maxretry
