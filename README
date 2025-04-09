@@ -2,4 +2,4 @@ read the jail.local file thats how the fail2ban /etc/fail2ban/jail.local file sh
 here's the command to check the device's ip = hostname -I
 the host file which you should backup is on /etc/hosts 
 and also make sure the command shasum is available and brew installed (its on cliapps.sh)
-
+also https://dns.quad9.net/dns-query add this as the default dns on your browser settings
