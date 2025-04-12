@@ -7,4 +7,4 @@ echo -e "blacklist nouveau\noptions nouveau modeset=0" | sudo tee /etc/modprobe.
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg && \
 sudo dracut --force /boot/initramfs-$(uname -r).img $(uname -r) && \
 sudo dnf remove xorg-x11-drv-nouveau -y && \
-sudo reboot
+sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda && reboot
