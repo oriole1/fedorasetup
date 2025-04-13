@@ -3,7 +3,7 @@
 ignoreip = 127.0.0.1/8 ::1 192.168.1.100
 
 # Ban time in seconds
-bantime = 600
+bantime = 3600
 
 # Time window for failed login attempts
 findtime = 600
